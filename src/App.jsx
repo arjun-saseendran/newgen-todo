@@ -14,7 +14,7 @@ setTodos((prev) => [{id: Date.now(), ...todo}, ...prev])
   }
 
   const deleteTodo = (id) => {
-    setTodos((prev) => prev.filter((todo) => todo.id !== id)
+    setTodos((prev) => prev.filter((todo) => todo.id !== id))
   }
 
   const toggleComplete = (id) => {
