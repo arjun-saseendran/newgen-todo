@@ -9,6 +9,11 @@ const TodoItem = ({todo}) => {
         updateTodo(todo.id, {...todo, todo: todoMessage})
         setIsTodoEditable(false)
     }
+    const toggleCompleted = () =>{
+        toggleComplete(todo.id);
+
+    }
+
   return (
     <div>TodoItem</div>
   )
